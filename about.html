@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/JavaHotel/about.css">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Java Hotel</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="/JavaHotel/main.html">Home</a></li>
+            <li><a href="/JavaHotel/rooms.html">Rooms</a></li>
+            <li><a href="/JavaHotel/gallery.html">Gallery</a></li>
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li class="logout"><a href="/JavaHotel/index.html">Logout</a></li>
+                </ul>
+            </li>
+               
+        </ul>
+    </header>
+
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Stay with Us</h1>
+            <p>Java Hotel is a distinct addition to Ilocos Norte and a smart choice <br> for travelers. Whether traveling for business or pleasure, <br> get the most out of your trip with a stay at Java Hotel.</p>
+            <a href="#" class="home-btn">Book Now</a>
+        </div>
+    </section>
+
+    <section class="home2" id="home2">
+        <div class="home2-text">
+            <h1>About Us</h1>
+            <p>Java Hotel provides a wide range of services and amenities to please even the most sophisticated visitor. Its strategic position gives it an ideal starting point for exploring Ilocos. Visitors on business will appreciate the hotel's accessibility to downtown and the airport. If you require transportation from or to the airport, the hotel can assist you. If you intend to come by vehicle, you'll appreciate the hotel's free on-site parking. <br><br> The hotel offers front-desk amenities such as concierge services and 24-hour reception. Tours and transportation options are offered for experiencing the location. The hotel's shuttle services provide for stress-free travel. <br> <br> With free WiFi, you'll never be disconnected from your contacts. Are you staying for an extended period of time or do you require clean clothes? The hotel's laundry and pressing services will keep your favorite travel clothes fresh and accessible. In-room amenities like as room service and regular housekeeping allow you to make the most of your space. Things you neglected to pack aren't a huge deal! You can acquire what you need from a neighboring convenience shop. <br> <br> The bedrooms of Java Hotel are equipped with convenient facilities to provide a comfortable stay. For your comfort, all rooms have air conditioning, cable TV, a coffee or tea maker, a hot and cold shower, a minibar, and free WiFi. For some rooms, Java Hotel additionally provides a hair dryer, amenities, robes, and bedroom slippers. The majority of rooms include an own balcony or patio with views of the garden, swimming pool, or city. To ensure the health and well-being of both guests and staff, smoking is forbidden in bedrooms and restricted to specified places only.
+            </p>
+        </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="newsletter">
+        <div class="news-text">
+            <h2>Newsletter</h2>
+            <p>Subscribe to our Newsletter for<br>more travel and lifestyle <br> recommendations.</p>
+        </div>
+
+        <div class="send">
+            <form>
+                <input type="email" placeholder="Write Your Email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="#">55B Gen. Sugundo Avenue</a></li>
+                        <li><a href="#">Laoag City, Ilocos Norte, Ilocos Region</a></li>
+                        <li><a href="#">1234-567-8901</a></li>
+                        <li><a href="#">hoteldelluna@domain.com</a></li>
+                        <li><a href="#">+6309-325-4925</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-text">
+            <p>Copyright &copy;2023 All right reserved | Made by John Paul Camacho </p>
+        </div>
+    </section>
+
+    <script>
+
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", function() {
+        header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+        };
+
+        window.onscroll = () => {
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('open');
+        };
+    </script>
+    
+</body>
+</html>
